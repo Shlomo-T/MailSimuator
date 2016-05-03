@@ -1086,11 +1086,11 @@
     <Content Include="Scripts\jquery-1.10.2.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\Source\Repos\ADMailService\MailFraudService\MLManager\MLManager.csproj">
+    <ProjectReference Include="..\MLManager\MLManager.csproj">
       <Project>{d74ba2c5-7315-4dff-bd75-01a14d8200b7}</Project>
       <Name>MLManager</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\..\..\..\Source\Repos\ADMailService\MailFraudService\MongoDB\MongoDB.csproj">
+    <ProjectReference Include="..\MongoDB\MongoDB.csproj">
       <Project>{65ee4021-428d-4486-a9a2-b7af811d2ede}</Project>
       <Name>MongoDB</Name>
     </ProjectReference>

@@ -7,14 +7,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmailValidatorService", "Em
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{7B187685-EA7F-4753-AE7E-DFFA0815D25C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLManager", "..\..\..\..\Source\Repos\ADMailService\MailFraudService\MLManager\MLManager.csproj", "{D74BA2C5-7315-4DFF-BD75-01A14D8200B7}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB", "..\..\..\..\Source\Repos\ADMailService\MailFraudService\MongoDB\MongoDB.csproj", "{65EE4021-428D-4486-A9A2-B7AF811D2EDE}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{E31D49DF-DE99-4F83-9B3F-398EC222F2FD}"
 	ProjectSection(SolutionItems) = preProject
 		WebEssentials2015-Settings.json = WebEssentials2015-Settings.json
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLManager", "MLManager\MLManager.csproj", "{D74BA2C5-7315-4DFF-BD75-01A14D8200B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MongoDB", "MongoDB\MongoDB.csproj", "{65EE4021-428D-4486-A9A2-B7AF811D2EDE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
