@@ -56,7 +56,23 @@ namespace EmailValidatorService.Controllers.API
             var msgs = MLManager.InitializeHelper.MongoMessages;
             if (msgs != null && msgs.Any())
             {
-                var toSend = msgs.Where(x => x.headers != null && !string.IsNullOrEmpty(x.headers.From) && x.headers.From.Contains(id));
+                var toSend = msgs.Where(x => x.headers != null && !string.IsNullOrEmpty(x.headers.From) && x.headers.From.Contains(id.Trim()));
+                if (toSend != null && toSend.Any())
+                {
+                    return toSend.ToList();
+                }
+            }
+            return null;
+        }
+
+        [Route("TestWithAI")]
+        [HttpGet]
+        public List<User> TestWith(string id)
+        {
+            var users = MLManager.InitializeHelper.MongoTestableUsers;
+            if (users != null && users.Any())
+            {
+                var toSend = users.Take(3);
                 if (toSend != null && toSend.Any())
                 {
                     return toSend.ToList();

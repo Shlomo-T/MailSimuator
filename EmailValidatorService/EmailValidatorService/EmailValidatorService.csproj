@@ -223,6 +223,7 @@
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App\app.js" />
     <Content Include="App\emailsService.js" />
     <Content Include="App\userService.js" />
     <Content Include="Content\bootstrap.css" />

@@ -32,7 +32,7 @@ namespace MongoDB
                 var collection = GetTasksCollection();
                 int dCount = (int)collection.Find(new BsonDocument()).Count();
 # if DEBUG
-                dCount = (int) dCount/50;
+                dCount = (int) dCount/20;
 #endif
                 int paging = 100;
                 ans=new List<Message>();
