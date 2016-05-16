@@ -84,10 +84,10 @@
                 <tr id="{{mail._id}}" ng-repeat="mail in Emails" style="cursor: pointer" ng-click="GetOwner(mail)">
                     <td> {{mail.headers.Date}} </td>
                     <td> {{mail.headers.From}} </td>
-                    <td> {{selectedUser}} </td>
-                    <td> {{mail.body}} </td>
+                    <td> {{ShortValue(mail.headers.To)}} </td>
+                    <td> {{ShortValue(mail.body)}} </td>
                     <td>
-                        {{mail.headers.Subject}}
+                        {{ShortValue(mail.headers.Subject)}}
                     </td>
                 </tr>
             </tbody>

@@ -74,7 +74,30 @@ init = function () {
                 console.log($scope.TestedEmail);
             }
 
-            $scope.showEmails=true;
+            $scope.showEmails = true;
+            $scope.ShortValue = function (value) {
+                if (!value) return '';
+
+                max = 32;
+                if (!max) return value;
+                if (value.length <= max) return value;
+
+                value = value.substr(0, max);
+                var lastspace = value.lastIndexOf(' ');
+                if (lastspace != -1) {
+                    //Also remove . and , so its gives a cleaner result.
+                    if (value.charAt(lastspace - 1) == '.' || value.charAt(lastspace - 1) == ',') {
+                        lastspace = lastspace - 1;
+                    }
+                    value = value.substr(0, lastspace);
+                }
+
+
+                return value + ' …';
+            }
+
+
+            
             console.log($scope.selectedUser);
             console.log($scope.Incoming);
             console.log($scope.Outgoing);

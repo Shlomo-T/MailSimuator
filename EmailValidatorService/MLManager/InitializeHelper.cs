@@ -81,6 +81,7 @@ namespace MLManager
         public static List<MongoDB.User> MongoUsers=null;
         public static List<MongoDB.User> MongoTestableUsers=null;
         public static List<MongoDB.Message> MongoMessages = null;
+        private static BayesClassifier.Classifier classifier = new BayesClassifier.Classifier();
 
 
         public static void InitialDataFromMongoDB()
